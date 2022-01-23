@@ -1,4 +1,23 @@
 <!--
+    Tags estruturais
+    <!- -> : cria um comentario
+    html: Envolve todo um documento hmtl
+    head: Envolve o cabeçalho de um documento html
+    meta: Fornece informações gerais sobre o documento
+            exemplo: charset = "utf8" (deixa o documento no formato PTBR)
+    style: Informações de estilo
+            exemplo: Uso do elemento/tag <style> para aplicar uma folha de estilo simples a um documento HTML
+    script: Linguagem de script, para usar o JS por exemplo 
+    noscript: Conteúdo alternativo para quando a linguagem script não for suportada
+    title: O título do documento
+    body: 
+-->
+
+
+
+
+
+<!--
     Hypertext Markup Language
     Linguagem de marcação de hipertexto
 
@@ -15,14 +34,21 @@
         - Elementos
 
 -->
-
+<!--Aqui vem o conteudo da tela-->
 <h1>
-    O título
+     O título
 </h1>
 
-<!-- Elementos Vazios -->
+
+<!--==================================================-->
+
+
+<!--                 Elementos Vazios                 -->
+<!--ELementos que não tem conteudos-->
 <img src="" alt="">
 <input type="text">
+
+<!--==================================================-->
 
 
 
@@ -31,6 +57,84 @@
     - informações extras
     - configurações
 -->
-<img src="" alt="" > 
+<img src="imagem.png" alt="texto" >
 
 
+
+<!--==================================================-->
+
+<!--
+    Atributos booleanos
+    -  não precisam de conteúdo
+-->
+
+<input type="text" disabled>
+<!--disabled é um atributo booleano por considerar se um campo
+vai ou não ser habilitado, exemplo desse input-->
+
+<!--==================================================-->
+
+
+<!--
+    Aspas
+    -  omissão
+    - simples
+    - duplas
+-->
+
+<!--==================================================-->
+
+<!--
+    Atributos Globais mais utilizados
+
+    - class:
+        Utilizada para aplicar o CSS e para acessar o JS
+
+    - contenteditable:
+        Com esse atributo eu consigo editar o "conteúdo"
+
+    - data -*
+        Posso expandir que tipo de atributo adicionar, utilizar para
+        JS e fazer alguma logica
+
+    - hidden
+        Esconder uma tag
+
+    - id
+        Um identificado, de preferencia não repetir para não dar problema
+        la na frente
+    - style
+        Dar estilo, cor
+    - tabindex
+        Acessibilidade, usar o tab para saltar conteudo dentro da pagina
+    - title:
+        Para definir um título
+São aplicadas a qualquer TAG
+-->
+
+<div class="carrinho" contenteditable="true" id="carti">
+    <!--elementos aqui dentro-->
+    conteúdo
+</div>
+
+<div class="carrinho" data-id="" id="cart2" style="color: red" >
+    <!--elementos aqui dentro-->
+    conteúdo
+</div>
+
+<div class="carrinho" hidden>
+    <!--elementos aqui dentro-->
+    conteúdo
+</div>
+
+<div tabindex="1">
+    conteudo1
+</div>
+
+<div tabindex="2">
+    conteudo2
+</div>
+
+<div tabindex="3">
+    conteudo3   
+</div>
